@@ -1,0 +1,158 @@
+remeber this imp steps
+1- Firstly download model from this google drive link ( https://drive.google.com/drive/folders/1-6XyxqRYSJySAyYK8-h-Gt6wuIs2TeXu?usp=drive_link ) 
+	in path ...\fish_project\
+2- the ven (virtual enivormnet of pi5 is need to create and need to run all steps given below)
+    # AI-Based Fishpond Monitoring System
+
+This project is designed to run on **Raspberry Pi 5** using **Python 3.11**.
+
+---
+
+# Step 1 – Update Raspberry Pi
+
+```bash
+sudo apt update
+sudo apt upgrade -y
+```
+
+---
+
+# Step 2 – Install Required System Packages
+
+```bash
+sudo apt install -y \
+python3 \
+python3-pip \
+python3-venv \
+git \
+libatlas-base-dev \
+libopenblas-dev \
+libjpeg-dev \
+libopenjp2-7 \
+libtiff-dev \
+i2c-tools \
+python3-lgpio
+```
+
+---
+
+# Step 3 – Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+```
+
+```bash
+cd YOUR_REPOSITORY
+```
+
+---
+
+# Step 4 – Create Virtual Environment
+
+```bash
+python3 -m venv venv
+```
+
+---
+
+# Step 5 – Activate Virtual Environment
+
+```bash
+source venv/bin/activate
+```
+
+You should now see:
+
+```
+(venv) pi@raspberrypi:~$
+```
+
+---
+
+# Step 6 – Upgrade pip
+
+```bash
+pip install --upgrade pip
+```
+
+---
+
+# Step 7 – Install Required Python Packages
+
+If `requirements.txt` is included:
+
+```bash
+pip install -r requirements.txt
+```
+
+If it is not available, install the required packages manually:
+
+```bash
+pip install \
+Flask \
+flask-cors \
+streamlit \
+numpy \
+pandas \
+plotly \
+joblib \
+requests \
+pyserial \
+watchdog \
+uvicorn \
+starlette \
+gpiozero \
+lgpio \
+smbus2 \
+adafruit-blinka \
+Adafruit-Blinka-Raspberry-Pi5-Neopixel \
+adafruit-circuitpython-ads1x15 \
+adafruit-circuitpython-busdevice \
+adafruit-circuitpython-connectionmanager \
+adafruit-circuitpython-framebuf \
+adafruit-circuitpython-requests \
+adafruit-circuitpython-ssd1306
+```
+
+---
+
+# Step 8 – Verify Installation
+
+```bash
+python --version
+```
+
+```bash
+pip list
+```
+
+---
+
+# Step 9 – Run the Project
+
+Example:
+
+```bash
+python ai_boat_system.py
+```
+
+Run Flask server:
+
+```bash
+python dashboard/flask_server.py
+```
+
+Run Streamlit dashboard:
+
+```bash
+streamlit run dashboard/dashboard_server.py
+```
+
+---
+
+# Notes
+
+- Do **not** upload the `venv` folder to GitHub.
+- Recreate the virtual environment using the steps above.
+- Keep `requirements.txt` updated whenever packages change.

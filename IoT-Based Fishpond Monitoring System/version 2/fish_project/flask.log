@@ -1,0 +1,4 @@
+  File "/home/salamat/fish_project/dashboard/flask_server.py", line 168
+    global collection_info
+    ^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: name 'collection_info' is used prior to global declaration

@@ -1,0 +1,6 @@
+timestamp,Pond_ID,Fish_Species,pH,Temperature,TDS,Turbidity,Distance,Water_Type
+2026-07-05T09:19:26.219,1,Silver carp,7.59,28.9,365.53,0.63,0.21,Algae
+2026-07-03T16:33:56.344,1,Carp,7.08,34.4,356.3,1.61,1.14,Clear
+2026-07-05T09:44:20.613,1,Talipia,7.52,31.6,342.04,4.25,1.34,Contaminated
+2026-07-05T11:13:04.999,1,Rohu,7.25,33.7,305.94,11.97,0.55,Muddy
+2026-07-05T14:34:48.324,1,Not Recommended,7.41,34.1,940.5,14.96,0.21,Contaminated
